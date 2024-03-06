@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.bodyy {
+    height: 100vh;
+    background: #000115;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0px;
+}
+
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+.boxx {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(188, 199, 195);
+    background-repeat: repeat-x;
+    background-size: 100vw 100vh;
+    position: absolute;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 210px;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 65px;
+    font-family: "Poppins", sans-serif;
+}
+
+.button {
+    width: 300px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: none;
+    background-color: #000115;
+    color: white;
+    border: 2px solid #e7e7e7;
+}
+
+.backBtn {
+    width: 150px;
+    height: 50px;
+    margin-top: 420px;
+    position: absolute;
+}
+
+.button:hover {
+    background-color: white;
+    color: #000115;
+}
+
+.img {
+    position: absolute;
+    margin-top: 27%;
+    width: 350px;
+    height: 350px;
+}
+
+.scoreLine {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    margin-left: -1000px;
+    margin-top: 150px;
+}
+
+.about {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.controls {
+    width: 512px;
+    height: 340px;
+    position: absolute;
+    margin-top: 110px;
+}
+
+.man {
+    width: 692px;
+    height: 599px;
+    position: absolute;
+    transform: scale(0.5);
+    margin-top: 220px;
+}
+
+.score {
+    color: red;
+    text-align: center;
+}
+
+.gameOverText {
+    position: absolute;
+    color: white;
+    margin-top: 250px;
+    font-size: 28px;
+    font-family: sans-serif;
+    animation: gameOver;
+    animation-duration: 0.4s;
+    text-align: center;
+}
+
+.gameOverText:hover {
+    font-size: 50px;
+    transition-duration: 0.4s;
+}
+
+@keyframes gameOver {
+    0% {
+        font-size: 28px;
+    }
+    100% {
+        font-size: 50px;
+    }
+}
+
+.life {
+    width: 768px;
+    height: 256px;
+    position: absolute;
+    background-image: url("img/life.png");
+    transform: scale(0.2);
+    margin-top: -10%;
+    margin-left: 70%;
+}
+
+.power {
+    width: 500px;
+    height: 100px;
+    background-image: url("sprite/power/powerbar_10.png");
+    position: absolute;
+    transform: scale(0.5);
+    margin-top: -85px;
+    margin-left: -120px;
+}
+
+.ammo {
+    width: 500px;
+    height: 100px;
+    background-image: url("sprite/ammo/ammo_1.png");
+    position: absolute;
+    transform: scale(0.5);
+    margin-top: -47px;
+    margin-left: -70px;
+}
+
+.gun {
+    width: 300px;
+    height: 150px;
+    background-image: url("img/gun.png");
+    position: absolute;
+    transform: scale(0.5);
+    margin-top: 100px;
+}
+
+.alien {
+    width: 573px;
+    height: 815px;
+    position: absolute;
+    margin-top: 5%;
+    background-image: url("sprite/alien.png");
+    transform: scale(0.18);
+}
+
+.ninja {
+    width: 363px;
+    height: 458px;
+    position: absolute;
+    margin-top: 17.5%;
+    background-image: url("sprite/ninjaRun.png");
+    transform: scaleX(-0.3) scaleY(0.3);
+}
+
+.zombie {
+    width: 430px;
+    height: 519px;
+    position: absolute;
+    margin-top: 15%;
+    background-image: url("sprite/zombieWalk.png");
+    transform: scaleX(-0.3) scaleY(0.3);
+}
