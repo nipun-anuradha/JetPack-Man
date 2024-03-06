@@ -15,7 +15,7 @@ Recommended	:Firefox (97.0.1) or later Virsion
 		 | Display resolution 1600 x 900 |
 
 Developed By	:Nipun Anuradha
-		 anuradha.stude@gmail.com
+		 anuradha.studeo@gmail.com
 
 Languages	:HTML,CSS,JavaScript
 
